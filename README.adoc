@@ -1,0 +1,82 @@
+= tio Config
+Jordan Williams <jordan@jwillikers.com>
+:experimental:
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:tio: https://github.com/tio/tio[tio]
+
+My configuration files for the {Tio} serial device tool.
+
+== Usage
+
+This repository contains the configuration files for {tio} for the various devices I connect to over serial.
+
+. Install tio.
++
+[,sh]
+----
+sudo dnf -y install tio
+----
+
+. Clone this repository.
++
+[,sh]
+----
+git -C ~/Projects clone git@github.com:jwillikers/tio-config.git
+----
+
+. Change to the repository directory.
++
+[,sh]
+----
+cd tio-config
+----
+
+. Create the `~/.config/tio` directory.
++
+[,sh]
+----
+mkdir -p ~/.config/tio
+----
+
+. Symlink the `tio/config` file to the `~/.config/tio/` subdirectory.
++
+[,sh]
+----
+ln --relative --symbolic tio/config ~/.config/tio/
+----
+
+. Run `tio` followed by the desired device in the configuration file.
++
+[,sh]
+----
+tio rpi4
+----
+
+== References
+
+* https://github.com/tio/tio/blob/master/example/config[tio Example Config]
+* https://wiki.archlinux.org/title/working_with_the_serial_console[Arch Linux Wiki: Working with the serial console]
+
+== Code of Conduct
+
+Please refer to the project's link:CODE_OF_CONDUCT.adoc[Code of Conduct].
+
+== License
+
+This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[GPLv3].
+Please refer to the bundled link:LICENSE.adoc[license].
+
+== Copyright
+
+© 2023 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]

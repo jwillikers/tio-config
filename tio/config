@@ -1,0 +1,124 @@
+# Defaults
+alert = none
+baudrate = 115200
+color = bold
+databits = 8
+hexadecimal = disable
+local-echo = disable
+log = disable
+log-append = disable
+log-strip = disable
+no-autoconnect = disable
+output-delay = 0
+output-line-delay = 0
+parity = none
+prefix-ctrl-key = t
+response-wait = disable
+rs-485 = disable
+stopbits = 1
+timestamp = disable
+
+# To enable logging, add something like the following to the configuration.
+# log = enable
+# log-file = rpi4.log
+
+[bmp]
+# Black Magic Probe: https://1bitsquared.com/products/black-magic-probe
+# Use Udev rules for serial console: https://github.com/blackmagic-debug/blackmagic/tree/main/driver
+# Atleast until I can figure out the exact /dev/serial/by-id.
+device = /dev/ttyBmpTarg
+
+[cp2102n]
+# Adafruit CP2102N Friend: https://www.adafruit.com/product/5335
+device = /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_788777d76611ec11bbd621c7bd930c07-if00-port0
+
+[ft232h]
+# Adafruit FT232H Breakout: https://www.adafruit.com/product/2264
+device = /dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6L667C-if00-port0
+
+[hs-probe]
+# https://github.com/probe-rs/hs-probe
+device = /dev/serial/by-id/usb-Probe-rs_development_team_HS-Probe_with_CMSIS-DAP_Support_12000e001650563641333620-if02
+
+[mcp2221a]
+# Adafruit MCP2221A Breakout: https://www.adafruit.com/product/4471
+device = /dev/serial/by-id/usb-Microchip_Technology_Inc._MCP2221_USB-I2C_UART_Combo-if00
+
+[pinebook-pro]
+# https://wiki.pine64.org/wiki/Pinebook_Pro#Using_the_serial_console_UART
+baudrate = 1500000
+# https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/
+device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+
+[pinephone]
+# Is this right for the AllWinner SoC?
+baudrate = 1500000
+# https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/
+device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+
+[pinephone-pro]
+baudrate = 1500000
+# https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/
+device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+
+[pinetab]
+# Is this right for the AllWinner SoC?
+baudrate = 1500000
+# https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/
+device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+
+[pinetab-v]
+baudrate = 1500000
+# https://pine64.com/product/pinetab2-pinetab-v-uart-dongle/
+device = /dev/serial/by-id/
+
+[pinetab2]
+# https://wiki.pine64.org/wiki/PineTab2#Connecting_the_UART_adapter
+baudrate = 1500000
+# https://pine64.com/product/pinetab2-pinetab-v-uart-dongle/
+device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+
+[piuart]
+# Adafruit PiUART: https://www.adafruit.com/product/3589
+device = /dev/serial/by-id/usb-Raspberry_Pi_Debug_Probe__CMSIS-DAP__E6614103E75A072F-if01
+
+[quartz64]
+baudrate = 1500000
+# Adafruit PiUART: https://www.adafruit.com/product/3589
+device = /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ae14e5576a11ec118c7620c7bd930c07-if00-port0
+
+[rock64]
+baudrate = 1500000
+# Adafruit PiUART: https://www.adafruit.com/product/3589
+device = /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ae14e5576a11ec118c7620c7bd930c07-if00-port0
+
+[rockpro64]
+baudrate = 1500000
+# Adafruit PiUART: https://www.adafruit.com/product/3589
+device = /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ae14e5576a11ec118c7620c7bd930c07-if00-port0
+
+[rpi4]
+baudrate = 115200
+color = 12
+# Adafruit PiUART: https://www.adafruit.com/product/3589
+device = /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ae14e5576a11ec118c7620c7bd930c07-if00-port0
+line-pulse-duration = DTR=200,RTS=150
+
+[rpi5]
+# https://www.raspberrypi.com/documentation/computers/raspberry-pi-5.html#uart-connector
+device = /dev/serial/by-id/usb-Raspberry_Pi_Debug_Probe__CMSIS-DAP__E6614103E75A072F-if01
+baudrate = 115200
+
+# todo
+# [rusty-probe]
+# https://github.com/probe-rs/rusty-probe
+# device = /dev/serial/by-id/
+
+[usb]
+device = /dev/ttyUSB%s
+color = 13
+pattern = usb([0-9]*)
+
+[woodpecker]
+# https://pine64.com/product/serial-console-woodpecker-edition/
+device = /dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0
