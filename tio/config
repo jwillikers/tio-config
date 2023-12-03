@@ -51,8 +51,7 @@ baudrate = 1500000
 device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
 
 [pinephone]
-# Is this right for the AllWinner SoC?
-baudrate = 1500000
+baudrate = 115200
 # https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/
 device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
 
