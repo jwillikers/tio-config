@@ -24,6 +24,13 @@ This repository contains the configuration files for {tio} for the various devic
 sudo dnf -y install tio
 ----
 
+. Make a `~/Projects` directory in which to clone the repository.
++
+[,sh]
+----
+mkdir -p ~/Projects
+----
+
 . Clone this repository.
 +
 [,sh]
