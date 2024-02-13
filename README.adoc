@@ -21,14 +21,14 @@ This repository contains the configuration files for {tio} for the various devic
 +
 [,sh]
 ----
-sudo dnf -y install tio
+sudo dnf --assumeyes install tio
 ----
 
 . Make a `~/Projects` directory in which to clone the repository.
 +
 [,sh]
 ----
-mkdir -p ~/Projects
+mkdir --parents ~/Project
 ----
 
 . Clone this repository.
@@ -49,7 +49,7 @@ cd tio-config
 +
 [,sh]
 ----
-mkdir -p ~/.config/tio
+mkdir --parents ~/.config/tio
 ----
 
 . Symlink the `tio/config` file to the `~/.config/tio/` subdirectory.
@@ -82,7 +82,7 @@ Please refer to the bundled link:LICENSE.adoc[license].
 
 == Copyright
 
-© 2023 Jordan Williams
+© 2023-2024 Jordan Williams
 
 == Authors
 

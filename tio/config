@@ -50,6 +50,7 @@ baudrate = 1500000
 # https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/
 device = /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
 
+# Flip the headphone jack privacy switch on the back of the phone down to access the serial console.
 [pinephone]
 baudrate = 115200
 # https://pine64.com/product/pinebook-pinephone-pinetab-serial-console/
