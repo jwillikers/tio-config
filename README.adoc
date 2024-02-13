@@ -11,7 +11,7 @@ ifdef::env-github[]
 endif::[]
 :tio: https://github.com/tio/tio[tio]
 
-My configuration files for the {Tio} serial device tool.
+My configuration files for the {tio} serial device tool.
 
 == Usage
 
