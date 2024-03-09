@@ -17,25 +17,13 @@ My configuration files for the {tio} serial device tool.
 
 This repository contains the configuration files for {tio} for the various devices I connect to over serial.
 
-. Install tio.
-+
-[,sh]
-----
-sudo dnf --assumeyes install tio
-----
-
-. Make a `~/Projects` directory in which to clone the repository.
-+
-[,sh]
-----
-mkdir --parents ~/Project
-----
+. Install {just} by following the instructions in the https://github.com/casey/just?tab=readme-ov-file#installation[installation section].
 
 . Clone this repository.
 +
 [,sh]
 ----
-git -C ~/Projects clone git@github.com:jwillikers/tio-config.git
+git clone https://github.com/jwillikers/tio-config.git
 ----
 
 . Change to the repository directory.
@@ -45,21 +33,16 @@ git -C ~/Projects clone git@github.com:jwillikers/tio-config.git
 cd tio-config
 ----
 
-. Create the `~/.config/tio` directory.
+. Run `just` to install everything.
 +
 [,sh]
 ----
-mkdir --parents ~/.config/tio
+just
 ----
 
-. Symlink the `tio/config` file to the `~/.config/tio/` subdirectory.
-+
-[,sh]
-----
-ln --relative --symbolic tio/config ~/.config/tio/
-----
+. Log out and back in for the user's membership in the `dialout` group to take effect.
 
-. Run `tio` followed by the desired device in the configuration file.
+. Run `tio` followed by the desired device in the configuration file to open a serial console.
 +
 [,sh]
 ----
