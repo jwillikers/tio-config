@@ -109,6 +109,12 @@ line-pulse-duration = DTR=200,RTS=150
 device = /dev/serial/by-id/usb-Raspberry_Pi_Debug_Probe__CMSIS-DAP__E6614103E75A072F-if01
 baudrate = 115200
 
+[star64]
+baudrate = 115200
+color = 12
+# Adafruit PiUART: https://www.adafruit.com/product/3589
+device = /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ae14e5576a11ec118c7620c7bd930c07-if00-port0
+
 # todo
 # [rusty-probe]
 # https://github.com/probe-rs/rusty-probe
