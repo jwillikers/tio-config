@@ -115,10 +115,9 @@ color = 12
 # Adafruit PiUART: https://www.adafruit.com/product/3589
 device = /dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_ae14e5576a11ec118c7620c7bd930c07-if00-port0
 
-# todo
-# [rusty-probe]
+[rusty-probe]
 # https://github.com/probe-rs/rusty-probe
-# device = /dev/serial/by-id/
+device = /dev/serial/by-id/usb-Probe-rs_development_team_Rusty_Probe_with_CMSIS-DAP_v1_v2_Support_dc645020139e3822ef4014-if02@
 
 [usb]
 device = /dev/ttyUSB%s
