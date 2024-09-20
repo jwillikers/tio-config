@@ -106,8 +106,8 @@ line-pulse-duration = DTR=200,RTS=150
 
 [rpi5]
 # https://www.raspberrypi.com/documentation/computers/raspberry-pi-5.html#uart-connector
-device = /dev/serial/by-id/usb-Raspberry_Pi_Debug_Probe__CMSIS-DAP__E6614103E75A072F-if01
 baudrate = 115200
+device = /dev/serial/by-id/usb-Raspberry_Pi_Debug_Probe__CMSIS-DAP__E6614103E75A072F-if01
 
 [star64]
 baudrate = 115200
