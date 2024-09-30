@@ -23,7 +23,7 @@ This repository contains the configuration files for {tio} for the various devic
 +
 [,sh]
 ----
-git clone https://github.com/jwillikers/tio-config.git
+git clone https://codeberg.org/jwillikers/tio-config.git
 ----
 
 . Change to the repository directory.
